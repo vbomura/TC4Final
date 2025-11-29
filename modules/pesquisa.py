@@ -144,7 +144,7 @@ def app():
             cliente_pred = teste_novo_paciente[['peso','historico_familiar_cod', 'idade', 'calorias_frequente_cod', 'entre_refeicao_ord']]
 
 
-            model = joblib.load('tools\RandomForest.joblib')
+            model = joblib.load('tools/RandomForest.joblib')
             final_pred = model.predict(cliente_pred)
 
             predicaoGerada=-1
