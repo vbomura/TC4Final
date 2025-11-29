@@ -11,8 +11,6 @@ from tools.utils import RenomearColunasTransf, MultiLabelEncoder, YesNoToBinaryT
 def app():
     #importando base (alterar para caminho do GIT)
     base = pd.read_csv(r"https://raw.githubusercontent.com/vbomura/TC4Final/refs/heads/main/arquivos/Obesity.csv", sep=',')
-    #exmplo:
-    #dados = pd.read_csv('https://raw.githubusercontent.com/alura-tech/alura-tech-pos-data-science-credit-scoring-streamlit/main/df_clean.csv')
 
     st.set_page_config(page_title="Levantamento sobre dados de obesidade")
     st.title("Levantamento sobre dados de obesidade")
@@ -36,6 +34,56 @@ def app():
 
     #CAEC
     input_lanches = st.selectbox('Consumo de lanches entre as refeições?', ("Selecione...", "Não consome", "Às vezes", "Frequentemente", "Sempre"))
+
+
+    ##Perguntas não utilizadas se for utilziar no futuro, terá que ajustar a variavel no objeto que é criado apos clicar no botão
+    ##Gender
+    #st.write('### Por favor, preencher os dados da Pesquisa:')
+    #input_genero = st.radio('Selecione o Sexo:',["***Masculino***","***Feminino***"])
+
+    #Height
+    """     input_altura = st.number_input(
+        "Insira sua altura (em cm)",
+        min_value=50,      # Altura mínima razoável
+        max_value=300,     # Altura máxima razoável
+        value=170,         # Valor padrão
+        step=1,            # Passo de 1 cm
+        format="%d"        # Garante que o valor seja um inteiro
+    ) """
+
+
+    ##FAVC
+    #input_alimento_calorico = st.radio('Consumo frequente de alimentos muito calóricos?',["***Sim***","***Não***"])
+
+    ##FCVC
+    #input_vegetais = st.selectbox('Frequência de consumo de vegetais nas refeições?', ("Selecione...", "Raramente", "Às vezes", "Sempre"))
+
+    ##NCP
+    #st.write('### Número de refeições principais por dia:')
+    #input_refeicoes = float(st.slider('Selecione a quantidade:', 1, 4))
+
+    ##SMOKE
+    #input_fuma = st.radio('Hábito de fumar?',["***Sim***","***Não***"])
+
+    ##CH2O
+    #input_agua = st.radio('Consumo diário de água?',["***< 1 L/dia***","***1–2 L/dia***","***2 L/dia***"])
+
+    ##SCC
+    #input_ingestao_calorica = st.radio('Monitora a ingestão calórica diária?',["***Sim***","***Não***"])
+
+    ##FAF
+    """     input_atividade_fisica = st.radio('Frequência semanal de atividade física:',["***Nenhuma***","***~1–2×/sem***"
+                                                                                ,"***~3–4×/sem***","***5×/sem ou mais***"]) """
+
+    ##TUE
+    #input_dispositivo_eletronico = st.radio('Tempo diário usando dispositivos eletrônicos',["***~0–2 h/dia***","***~3–5 h/dia***","***> 5 h/dia***"])
+
+    ##CALC
+    #input_alcoolica = st.selectbox('Consumo de bebida alcoólica?', ("Selecione...", "Não bebe", "Às vezes", "Frequentemente", "Sempre"))
+
+    ##MTRANS
+    #input_transporte = st.selectbox('Meio de transporte habitual', ("Selecione...", "Carro", "Moto", "Bicicleta", "Transporte Público", "A pé"))
+
 
     # ===========================================================
     # 🔘 Botão e tratamento dos dados
