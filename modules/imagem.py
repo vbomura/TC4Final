@@ -2,11 +2,7 @@ import streamlit as st
 import os
 
 def app():
-    st.title("Análise de Dados")
-    #st.write("Conteúdo da página de análise...")
-    st.image("assets/Grafico.png", caption="Minha imagem")
-
-    st.subheader("Relações entre Hábitos e Obesidade")
+    st.title("Informações sobre a Predição")
 
     st.markdown("""
     ### Antes de analisar os gráficos...
@@ -21,3 +17,5 @@ def app():
     aceleram as chances da pessoa ter obesidade.
                 
     """)
+
+    st.image("assets/Grafico.png", caption="Minha imagem")
