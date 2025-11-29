@@ -61,7 +61,7 @@ O projeto inclui:
 - Matriz de confusão  
 
 
-###Modelo escolhido foi: **Random Forest**  
+### Modelo escolhido foi: **Random Forest**  
 ---
 
 # 📁 Estrutura do Projeto
